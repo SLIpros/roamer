@@ -1,6 +1,7 @@
 package decoder
 
 import (
+	"fmt"
 	"net/http"
 	"net/url"
 	"reflect"
@@ -32,6 +33,7 @@ func WithDisabledSplit() FormURLOptionsFunc {
 // WithSplitSymbol sets array split symbol.
 func WithSplitSymbol(splitSymbol string) FormURLOptionsFunc {
 	return func(f *FormURL) {
+		fmt.Println("awe")
 		f.splitSymbol = splitSymbol
 	}
 }
