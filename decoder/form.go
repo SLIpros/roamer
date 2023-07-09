@@ -25,7 +25,7 @@ type FormURLOptionsFunc func(*FormURL)
 // WithDisabledSplit disables array splitting.
 func WithDisabledSplit() FormURLOptionsFunc {
 	return func(f *FormURL) {
-		f.split = true
+		f.split = false
 	}
 }
 
